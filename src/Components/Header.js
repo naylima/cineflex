@@ -1,6 +1,16 @@
+import { useNavigate } from "react-router-dom";
+import {IoIosArrowDropleft} from "react-icons/io";
+
 function Header () {
-    return (
-        <div id="header">CINEFLEX</div>
+    
+    const navigate = useNavigate();
+
+    return (       
+        <div id="header">            
+            CINEFLEX
+            {window.location.pathname === "/" ? "" : 
+                <IoIosArrowDropleft id="icon" onClick={() => navigate(-1)}/>}            
+        </div>   
     )
 }
 

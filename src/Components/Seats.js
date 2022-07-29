@@ -15,7 +15,10 @@ function Seats () {
     const [seats, setSeats] = useState([]); 
     const [movie, setMovie] = useState ([]);
     const [day, setDay] = useState([])
-    const [data, setData] = useState([]); 
+    const [data, setData] = useState([]);
+    const [id, SetId] = useState([]);
+    const [name, setName] = useState("");
+    const [cpf, setCpf] =useState ("");
 
     useEffect(() => {
         const promise = axios.get(`https://mock-api.driven.com.br/api/v7/cineflex/showtimes/${params.idSessao}/seats`);
@@ -37,16 +40,12 @@ function Seats () {
         SetId(remove)
     }    
 
-    const [id, SetId] = useState([]);
-    const [name, setName] = useState("");
-    const [cpf, setCpf] =useState ("");
-
     function bookSeats (e) {
         e.preventDefault();
 
         if(id.length === 0) {
             
-            alert ("Por favor, escolha um assento");
+            alert ("Por favor, escolha um assento!");
 
         } else {
 
@@ -66,9 +65,7 @@ function Seats () {
                         weekday: day.weekday,
                         hour: data.name,
                     }});
-            })
-            
-           
+            })            
         }       
     }
 
