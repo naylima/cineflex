@@ -116,7 +116,8 @@ function Seats () {
                     </input>
                     <label>CPF do comprador:</label>
                     <input 
-                        value={cpf} 
+                        value={cpf}
+                        pattern="([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})"
                         placeholder="Digite seu CPF..."
                         onChange={e => setCpf(e.target.value)}
                         required
