@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import React from 'react';
 
+import "./assets/style.css";
+
 function Schedule ({weekday, date, showtime}) {
     return (
         <>
             <p>{weekday} - {date}</p>
-            <div className="time">
+            <div>
                 <ShowTime showtime={showtime} />
             </div>
         </>

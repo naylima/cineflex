@@ -1,3 +1,5 @@
+import "./style.css"
+
 function Footer ({ posterURL , title, weekday , name }) {
     return (
         <footer>

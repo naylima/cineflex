@@ -1,6 +1,8 @@
 import { useNavigate, useLocation } from "react-router-dom";
 
-const Succes = () => {
+import "./style.css"
+
+const Success = () => {
 
     const { id, cpf, name, title, weekday, hour } =  useLocation().state;
     const navigate = useNavigate();
@@ -33,4 +35,4 @@ const Succes = () => {
     )
 }
 
-export default Succes;
+export default Success;

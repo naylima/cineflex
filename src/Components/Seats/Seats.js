@@ -4,8 +4,11 @@ import { useNavigate } from "react-router-dom";
 import React from 'react';
 import axios from 'axios';
 
+import "./assets/style.css";
+import loading from "./assets/loading.gif"
+
 import Seat from "./Seat";
-import Footer from './Footer';
+import Footer from '../Footer/Footer';
 
 function Seats () {   
 
@@ -70,24 +73,30 @@ function Seats () {
     }
 
     return (
-        <>
+        <>  
             <div className="session">
                 <div className="title">
                     <h2>Selecione o(s) assento(s)</h2>
                 </div>
 
-                <div className="seats">
-                    {seats.map((seat) => 
-                        <Seat 
-                            key={seat.id}
-                            id={seat.id}
-                            name={seat.name} 
-                            isAvailable={seat.isAvailable}
-                            event = {selectedSeats}
-                            removeEvent = {removeSeats}
-                        />
-                    )}
-                </div>
+                {data.length === 0 ? (
+                    <div className="seats"> 
+                        <img src={loading} alt="" />
+                    </div>                 
+                ) : (
+                    <div className="seats">
+                        {seats.map((seat) => 
+                            <Seat 
+                                key={seat.id}
+                                id={seat.id}
+                                name={seat.name} 
+                                isAvailable={seat.isAvailable}
+                                event = {selectedSeats}
+                                removeEvent = {removeSeats}
+                            />
+                        )}
+                    </div>
+                )}
 
                 <div className="seats">
                     <div>

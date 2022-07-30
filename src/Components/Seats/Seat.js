@@ -1,5 +1,7 @@
 import { useState} from 'react';
 
+import "./assets/style.css";
+
 function Seat ({ id, name, isAvailable , event , removeEvent}) {  
     
     const [status, setStatus] = useState("available");

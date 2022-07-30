@@ -1,3 +1,5 @@
+import "./assets/style.css";
+
 function Poster ({posterURL}) {
     return (        
         <div className="movie-card">

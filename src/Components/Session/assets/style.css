@@ -1,0 +1,18 @@
+.main-schedules {
+    width: calc(100% - 50px);
+    margin: auto;
+    padding-bottom: 120px;
+}
+
+.main-schedules p {
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    color: #293845;
+}
+
+.main-schedules button {
+    width: 82px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

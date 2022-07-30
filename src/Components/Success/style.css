@@ -1,0 +1,31 @@
+.succes {
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.succes .title {
+    width: 50%;
+    align-self: center;
+    text-align: center;
+    font-weight: 700;
+    color: #247A6B;
+}
+
+.succes h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    color: #293845;
+}
+
+.succes p {
+    font-size: 22px;
+    color: #293845;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+}

@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import {IoIosArrowDropleft} from "react-icons/io";
 
+import "./style.css"
+
 function Header () {
 
     const navigate = useNavigate();
