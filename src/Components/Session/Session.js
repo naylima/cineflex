@@ -23,7 +23,7 @@ function Session () {
             setDays(response.data.days);
             setData(response.data);
         });    
-    }, []);
+    }, [params.idFilme]);
 
     return (
         <>

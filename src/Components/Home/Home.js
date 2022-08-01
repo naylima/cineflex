@@ -31,9 +31,9 @@ function Home () {
                     </div>                 
                 ) : (
                     <div className="main-movie">
-                        {data.map((value) => (
-                            <Link to={`/sessoes/${value.id}`}>
-                                <Poster key={value.id} posterURL={value.posterURL}/>
+                        {data.map((value, index) => (
+                            <Link key={index} to={`/sessoes/${value.id}`}>
+                                <Poster posterURL={value.posterURL}/>
                             </Link>
                         ))}
                     </div>

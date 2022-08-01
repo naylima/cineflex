@@ -32,7 +32,7 @@ function Seats () {
             setDay(response.data.day);
             setData(response.data);
         });    
-    }, []);
+    }, [params.idSessao]);
 
     function selectedSeats (selectedid) {
         SetId([...id, selectedid]);

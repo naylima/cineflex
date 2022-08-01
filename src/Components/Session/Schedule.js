@@ -17,9 +17,9 @@ function Schedule ({weekday, date, showtime}) {
 function ShowTime ({showtime}) {
     return (
         <>
-            {showtime.map((time) => 
-                <Link to={`/assentos/${time.id}`}>
-                    <button key={time.id}>{time.name}</button>
+            {showtime.map((time, index) => 
+                <Link key={index} to={`/assentos/${time.id}`}>
+                    <button >{time.name}</button>
                 </Link>                
             )} 
         </>

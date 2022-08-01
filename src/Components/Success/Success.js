@@ -20,8 +20,8 @@ const Success = () => {
             </div>
             <div>
                 <h3>Ingressos</h3>
-                {id.map( item => (
-                    <p>Assento {item}</p>
+                {id.map( (item, index)=> (
+                    <p key={index}>Assento {item}</p>
                 ))}
             </div>
             <div>
