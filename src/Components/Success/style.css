@@ -29,3 +29,10 @@
     line-height: 26px;
     letter-spacing: 0.04em;
 }
+
+.succes button  {
+    width: 225px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    align-self: center;
+}
